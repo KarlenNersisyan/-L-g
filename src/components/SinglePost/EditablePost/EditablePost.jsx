@@ -106,7 +106,7 @@ class EditablePost extends Component {
                 <TextField
                   label="Post"
                   multiline
-                  rows={5}
+                  row={5}
                   value={content}
                   margin="normal"
                   fullWidth
@@ -119,7 +119,7 @@ class EditablePost extends Component {
           </Grid>
           <Grid container direction="row-reverse">
             <Button
-              variant="fab"
+              
               color="primary"
               aria-label="add"
               className={classes['done-button']}
@@ -131,7 +131,7 @@ class EditablePost extends Component {
               <DoneIcon />
             </Button>
             <Button
-              variant="fab"
+             
               aria-label="delete"
               className={classes['delete-button']}
               onClick={

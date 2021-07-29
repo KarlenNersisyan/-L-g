@@ -14,7 +14,7 @@ export default class Comments extends Component {
     } = this.props;
 
     return (
-      <Grid container justify="center">
+      <Grid container justifyContent="center">
         {comments.map(({ userId, title, content, date, id, postId }) => (
           <Grid key={id} item xs={12} sm={9}>
             <SingleComment

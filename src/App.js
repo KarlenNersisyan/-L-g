@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Blog from './components/Blog';
+import Blog from './components/Blog/Blog';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 export default class App extends Component {

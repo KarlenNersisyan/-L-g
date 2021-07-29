@@ -9,7 +9,7 @@ export default class Posts extends Component {
 
     if (posts.length === 0) {
       return (
-        <Grid container direction="column" alignItems="center" justify="center">
+        <Grid container direction="column" alignItems="center" justifyContent="center">
           <h2>There is no post on web-site.</h2>
           {!isLoggedIn ? (
             <h1>

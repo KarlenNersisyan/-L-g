@@ -59,7 +59,7 @@ class CreateComment extends Component {
     const { content } = this.state;
 
     return (
-      <Grid container justify="center">
+      <Grid container justifyContent="center">
         <Grid item xs={12} sm={9}>
           <TextField
             label="Comment"
@@ -67,15 +67,15 @@ class CreateComment extends Component {
             required
             fullWidth
             multiline
-            rows={4}
-            rowsMax={5}
+            minRows={4}
+            maxRows={5}
             placeholder="Write your comment..."
             onChange={this.handleContent}
             margin="normal"
           />
           <Grid container direction="row-reverse">
             <Button
-              variant="fab"
+              
               color="primary"
               aria-label="add"
               className={classes.button}

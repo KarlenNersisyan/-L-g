@@ -107,7 +107,7 @@ class SingleComment extends Component {
                 <TextField
                   label="Post"
                   multiline
-                  rows={5}
+                  row={5}
                   value={content}
                   margin="normal"
                   fullWidth

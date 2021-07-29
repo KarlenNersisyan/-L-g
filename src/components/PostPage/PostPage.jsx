@@ -33,7 +33,7 @@ export default class PostPage extends Component {
     const neededComments = comments.filter((comment) => comment.postId === id);
 
     return (
-      <Grid container justify="center">
+      <Grid container justifyContent="center">
         <Grid key={id} item xs={12} sm={9}>
           <SinglePost
             userId={userId}

@@ -41,7 +41,7 @@ function SimpleAppBar(props) {
     <div className={classes.root}>
       <AppBar position="static" color="primary">
         <Toolbar className={classes.toolbar}>
-          <Typography variant="title" color="inherit">
+          <Typography  color="inherit">
             <Link to="/blog-byNersisyan" className={classes.logo}>
               {window.innerWidth > 400 ? <Icon className={classes.icon} /> : ''}
               Blog

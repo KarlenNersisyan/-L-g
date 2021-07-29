@@ -78,10 +78,10 @@ class CreatePost extends Component {
     }
 
     return (
-      <Grid container justify="center">
+      <Grid container justifyContent="center">
         <Grid item xs={12} sm={9}>
           <Paper className={classes.container}>
-            <Typography align="center" variant="title">
+            <Typography align="center" >
               Tell us your story!
             </Typography>
             <Grid container>
@@ -104,14 +104,14 @@ class CreatePost extends Component {
               required
               fullWidth
               multiline
-              rows={10}
-              rowsMax={10}
+              minRows={10}
+              maxRows={10}
               placeholder="Write your post..."
               onChange={this.handleContent}
             />
             <Grid container direction="row-reverse">
               <Button
-                variant="fab"
+                
                 color="primary"
                 aria-label="add"
                 className={classes.button}
