@@ -1,20 +1,27 @@
 import React from 'react';
-
+import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 
+const styles = {
+  textColor: {
+    color: 'yellow',
+    fontSize: '25px',
+  },
+};
+
 const LogOutForm = (props) => {
-  const { logOut } = props;
+  const { logOut,classes } = props;
 
   return (
     <Grid container direction="column" alignItems="center">
-      <h1>LogOut</h1>
-      <p>Are you sure about leaving us?</p>
+      <h1>Sign Out</h1>
+      <p className={classes.textColor}> Thank you for using the site! </p>
       <Button onClick={logOut} variant="contained" color="primary">
-        LogOut
+        Sign Out
       </Button>
     </Grid>
   );
 };
 
-export default LogOutForm;
+export default withStyles(styles)(LogOutForm);

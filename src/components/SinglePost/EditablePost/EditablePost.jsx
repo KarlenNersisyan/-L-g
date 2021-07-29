@@ -34,6 +34,9 @@ const styles = (theme) => ({
   'delete-button': {
     marginLeft: '20px',
   },
+  postName: {
+    color: '#9f14ed91',
+  },
 });
 
 class EditablePost extends Component {
@@ -84,7 +87,7 @@ class EditablePost extends Component {
     const { isEdit, content } = this.state;
     return (
       <div>
-        <h1>Post</h1>
+        <h1 className={classes.postName}> --- Your Post ---</h1>
         <Card className={classes.card}>
           <Grid container direction="column">
             <CardHeader
@@ -119,7 +122,6 @@ class EditablePost extends Component {
           </Grid>
           <Grid container direction="row-reverse">
             <Button
-              
               color="primary"
               aria-label="add"
               className={classes['done-button']}
@@ -131,7 +133,6 @@ class EditablePost extends Component {
               <DoneIcon />
             </Button>
             <Button
-             
               aria-label="delete"
               className={classes['delete-button']}
               onClick={

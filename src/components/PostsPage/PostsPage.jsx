@@ -13,7 +13,7 @@ export default class Posts extends Component {
           <h2>There is no post on web-site.</h2>
           {!isLoggedIn ? (
             <h1>
-              <Link to="/blog-byNersisyan/auth">Login</Link> and be our first
+              <Link to="/blog-byNersisyan/auth">Sign In</Link> and be our first
               story teller.
             </h1>
           ) : (
@@ -28,7 +28,7 @@ export default class Posts extends Component {
 
     return (
       <Grid container direction="column" alignItems="center">
-        <h1>Posts:</h1>
+        <h1>Posts List</h1>
         {posts.map(({ userId, title, content, date, id }) => (
           <Grid style={{ width: '100%' }} key={id} item xs={12} sm={9}>
             <SinglePost
