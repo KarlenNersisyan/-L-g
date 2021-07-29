@@ -75,7 +75,6 @@ const styles = {
   },
   facebookLogo: {
     color: '#0f02a8',
-    marginRight: '230px',
   },
   facebookIcon: {
     fontSize: '42px',

@@ -17,7 +17,7 @@ const LogInForm = (props) => {
   return (
     <Grid container justifyContent="center">
       <Grid item xs={6}>
-        <h1>Sign In</h1>
+        <h1>Log In</h1>
         <Grid container direction="column">
           <TextField
             required
@@ -42,7 +42,7 @@ const LogInForm = (props) => {
             color="primary"
             className={classes.button}
           >
-            Sign In
+            Log In
           </Button>
         </Grid>
       </Grid>

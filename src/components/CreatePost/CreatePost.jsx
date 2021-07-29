@@ -11,10 +11,15 @@ import DoneIcon from '@material-ui/icons/Done';
 
 import getUniqueId from '../Blog/getUniqueId';
 
+
 const styles = {
   container: {
     margin: '20px',
     padding: '20px',
+  },
+  postName: {
+    color:'#426fab',
+    fontSize:'30px',
   },
 };
 
@@ -81,8 +86,8 @@ class CreatePost extends Component {
       <Grid container justifyContent="center">
         <Grid item xs={12} sm={9}>
           <Paper className={classes.container}>
-            <Typography align="center" >
-              Tell us your story!
+            <Typography align="center" className={classes.postName} >
+            Share interesting news with us here!
             </Typography>
             <Grid container>
               <Grid item xs={12} sm={9}>
@@ -112,7 +117,7 @@ class CreatePost extends Component {
             <Grid container direction="row-reverse">
               <Button
                 
-                color="primary"
+                color="secondary"
                 aria-label="add"
                 className={classes.button}
                 onClick={this.handlePost}

@@ -15,10 +15,10 @@ const LogOutForm = (props) => {
 
   return (
     <Grid container direction="column" alignItems="center">
-      <h1>Sign Out</h1>
+      <h1>Log Out</h1>
       <p className={classes.textColor}> Thank you for using the site! </p>
       <Button onClick={logOut} variant="contained" color="primary">
-        Sign Out
+        Log Out
       </Button>
     </Grid>
   );
